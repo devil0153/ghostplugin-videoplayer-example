@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ghost</name>
+    </assembly>
+    <members>
+        <member name="T:Ghost.CallbackResult">
+            <summary>
+            Represents the base class for classes that contain callback data, and provides a value to use for callback that do not include return value.
+            </summary>
+        </member>
+        <member name="P:Ghost.CallbackResult.IsSuccess">
+            <summary>
+            Gets or sets a value indicating whether this operation is successful
+            </summary>
+        </member>
+        <member name="P:Ghost.CallbackResult.Error">
+            <summary>
+            Gets the error exception object.
+            </summary>
+        </member>
+        <member name="T:Ghost.CallbackResult`1">
+            <summary>
+            Represents the callback data with return value.
+            </summary>
+            <typeparam name="T">The type of result</typeparam>
+        </member>
+        <member name="P:Ghost.CallbackResult`1.Result">
+            <summary>
+            Gets the result that a callback
+            </summary>
+        </member>
+        <member name="T:Ghost.IExternalViewExtension">
+            <summary>
+            External view extension interface
+            </summary>
+        </member>
+        <member name="T:Ghost.IExtensionConfig">
+            <summary>
+            Initialize configuration interface.
+            </summary>
+        </member>
+        <member name="M:Ghost.IExtensionConfig.Get``1(System.String,``0)">
+            <summary>
+            Gets the value associated with the specified key.
+            </summary>
+            <typeparam name="T">Configuration item type.</typeparam>
+            <param name="key">The key of the value to get.</param>
+            <param name="defaultValue">Default value</param>
+            <returns>The value associated with the specified key. If the specified key is not found, the default value will be used.</returns>
+        </member>
+        <member name="M:Ghost.IExtensionConfig.ContainsKey(System.String)">
+            <summary>
+            Determines whether the IExtensionConfig contains the specified key
+            </summary>
+            <param name="key">The key of the value to get.</param>
+            <returns>true if the IExtensionConfig contains an element with the specified key; otherwise, false.</returns>
+        </member>
+        <member name="T:Ghost.ExtensionInvokeCallback">
+            <summary>
+            Represents the method that will handle a callback event that has no return value.
+            </summary>
+            <param name="result">callback result</param>
+        </member>
+        <member name="T:Ghost.ExtensionInvokeCallback`1">
+            <summary>
+            Represents the method that will handle a callback event when the event provides return value.
+            </summary>
+            <typeparam name="T">The type of result</typeparam>
+            <param name="result">callback result</param>
+        </member>
+        <member name="T:Ghost.HubBase">
+            <summary>
+            Represents the base object that a hub between javascript and plugins
+            </summary>
+        </member>
+        <member name="P:Ghost.HubBase.Client">
+            <summary>
+            Represents the client object that provide dynamic invocation.
+            </summary>
+        </member>
+        <member name="T:Ghost.IExtensionView">
+            <summary>
+            View interface
+            </summary>
+        </member>
+        <member name="M:Ghost.IExtensionView.GetView">
+            <summary>
+            Get UI view
+            </summary>
+            <returns>UI</returns>
+        </member>
+        <member name="T:Ghost.IExtension">
+            <summary>
+            NONE-UI Extention interface
+            </summary>
+        </member>
+        <member name="M:Ghost.IExtension.Initialize(Ghost.IExtensionConfig)">
+            <summary>
+            Initialize extention
+            </summary>
+            <param name="config">Initialize configuration</param>
+        </member>
+        <member name="M:Ghost.IExtension.OnConnected">
+            <summary>
+            Fire when web page connected
+            </summary>
+        </member>
+        <member name="M:Ghost.IExtension.OnDisconnect">
+            <summary>
+            Fire when web page disconnect
+            </summary>
+        </member>
+        <member name="P:Ghost.IExtension.Hub">
+            <summary>
+            The hub object between javascript and plugins
+            </summary>
+        </member>
+        <member name="T:Ghost.IEmbeddedViewExtension">
+            <summary>
+            Embedded view extension interface
+            </summary>
+        </member>
+        <member name="P:Ghost.IEmbeddedViewExtension.IsClickThrough">
+            <summary>
+            Get host window is click through
+            </summary>
+        </member>
+    </members>
+</doc>

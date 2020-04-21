@@ -1,0 +1,9 @@
+C:\Users\devil\source\repos\ghostplugin-videoplayer-example\obj\Debug\VideoPlayer.csprojAssemblyReference.cache
+C:\Users\devil\source\repos\ghostplugin-videoplayer-example\obj\Debug\VideoPlayer.csproj.CoreCompileInputs.cache
+C:\Users\devil\source\repos\dist\Debug\EXT\VideoPlayer\icon.png
+C:\Users\devil\source\repos\dist\Debug\EXT\VideoPlayer\license.txt
+C:\Users\devil\source\repos\dist\Debug\EXT\VideoPlayer\VideoPlayer.dll
+C:\Users\devil\source\repos\dist\Debug\EXT\VideoPlayer\VideoPlayer.pdb
+C:\Users\devil\source\repos\ghostplugin-videoplayer-example\obj\Debug\VideoPlayer.csproj.CopyComplete
+C:\Users\devil\source\repos\ghostplugin-videoplayer-example\obj\Debug\VideoPlayer.dll
+C:\Users\devil\source\repos\ghostplugin-videoplayer-example\obj\Debug\VideoPlayer.pdb
